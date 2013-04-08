@@ -25,6 +25,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'unicorn'
+  gem 'growl'
   gem 'simplecov'
   gem 'fabrication'
   gem 'capybara'
