@@ -1,8 +1,8 @@
 StoreEngine::Application.routes.draw do
   resources :trips
 
-  resources :orders do 
-    member do 
+  resources :orders do
+    member do
       put :change_status, :as => "change_status_on"
     end
   end
@@ -23,6 +23,8 @@ StoreEngine::Application.routes.draw do
       put :unretire
     end
   end
+
+  get "all_products" => "products#list"
 
 
   resources :categories
