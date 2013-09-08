@@ -7,7 +7,7 @@ StoreEngine::Application.routes.draw do
     end
   end
 
-  match "code" => redirect("http://www.github.com/jmejia/store_engine"), :as => :code
+  match "code" => redirect("https://github.com/jemaddux/store_engine"), :as => :code
 
   resources :line_items do
     member do
